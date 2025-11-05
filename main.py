@@ -26,10 +26,10 @@ while True :
         response.raise_for_status()  # catch HTTP errors
         data = response.json()
     except requests.exceptions.Timeout:
-        print("Bro your internet is sleeping. Try again.")
+        print("Bad internet connection , try again later")
         continue
     except Exception:
-        print("API messed up. Try later.")
+        print("API error .")
         continue
 
 
